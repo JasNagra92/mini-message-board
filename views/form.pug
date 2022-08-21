@@ -1,0 +1,15 @@
+extends layout 
+
+block content
+
+  h1 Add a book
+  div
+    form(method='POST' action='/new' style='display:flex; flex-direction:column; gap:5px')
+      div(style='display:flex')
+       label(for='text') Message: 
+       textarea(name='text' id='text' placeholder='text')
+      div(style='display:flex; gap:15px')
+       label(for='author') Author:
+       input(name='author' id='author' placeholder='author')
+      div
+       button post 
